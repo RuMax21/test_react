@@ -1,5 +1,5 @@
 export interface Product {
-  id: number;
+  id: string;
   title: string;
   description: string;
   price: number;
@@ -8,6 +8,7 @@ export interface Product {
   stock: number;
   brand: string;
   category: string;
+  thumbnail: string;
   images: string[];
   isLiked?: boolean;
   createAt?: Date;
@@ -22,4 +23,4 @@ export interface ProductFormData {
   category: string;
 }
 
-export type FilterType = 'all' | 'favorites';
+export type FilterType = "all" | "favorites";
